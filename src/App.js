@@ -13,7 +13,7 @@ function App() {
   const [gamesDB, setGameDB] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:8000/" || "http://localhost:5000/")
+    fetch("https://the-best-retro-games-backend.herokuapp.com/games")
       .then(data => data.json())
       .then(games => {        
         games.sort(function compere(gameA,gameB){
