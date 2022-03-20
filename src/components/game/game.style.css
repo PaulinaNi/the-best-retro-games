@@ -1,0 +1,58 @@
+.gameContainer{
+ padding: 0.5rem;
+ color: var(--color-white);
+ background-color:  var(--color-whiteTransp);
+ width: 90%;
+ margin: 1rem auto;
+ border-radius: 1rem;
+ text-align: center;
+ display: flex;
+ flex-direction: column-reverse;
+}
+.gameImg img{
+ width: 100%;
+ border-radius: 1rem 1rem 0 0;
+}
+
+.gameSpecification span,
+.consolLinks{
+ display: block;
+ color: var(--color-accent);
+}
+
+.gameName h2{
+ margin:0;
+ color: var(--color-main);
+ font-family: 'VT323', monospace;
+ font-size: 3rem;
+}
+
+.co-opButton{
+ margin:1rem 0;
+ background-color: transparent;
+ border-radius: 1rem;
+ border: var(--color-accent) solid 0.2rem;
+ padding: 0.3rem 1rem;
+ font-weight: 700;
+ font-size: 1.2rem;
+ color: var(--color-white)
+}
+
+.platformImg{
+ width: 80%;
+ padding-top: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+ .gameContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+ }
+ .gameSpecification{
+  margin: auto auto;
+ }
+ .platformImg{
+  width: 40%;
+ }
+}

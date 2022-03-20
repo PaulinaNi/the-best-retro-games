@@ -1,0 +1,22 @@
+.homepage{
+ padding-top: 1rem;
+ text-align: center;
+ color: var(--color-white)
+}
+.homepage li{
+ list-style: none;
+}
+.homepage ul{
+ padding: 0;
+}
+
+.platform img{
+ width: 80%;
+}
+
+.homepage a{
+ color: var(--color-main);
+ text-decoration: none;
+ font-family: 'VT323', monospace;
+ font-size: 2rem;
+}
