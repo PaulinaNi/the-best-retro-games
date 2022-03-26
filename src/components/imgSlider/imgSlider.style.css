@@ -2,10 +2,6 @@
  width: 100%;
  border-radius: 1rem 1rem 0 0;
 }
-.imgSliderDots{
- display: flex;
- justify-content: center;
-}
 
 @media (min-width: 48rem){
  .imgSlider img{
