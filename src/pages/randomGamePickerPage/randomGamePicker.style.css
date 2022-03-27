@@ -1,0 +1,5 @@
+.randomGamePickerPage h1{
+ padding-top: 1rem;
+ text-align: center;
+ color: var(--color-accent);
+}

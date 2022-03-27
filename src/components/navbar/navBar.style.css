@@ -14,10 +14,10 @@
 
 .navBarLinks li{
  list-style: none;
- cursor: pointer;
 }
 .navBarLinks img{
  width: 80%;
+ cursor: pointer;
 }
 
 .desktopNavBar{

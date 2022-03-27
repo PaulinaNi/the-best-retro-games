@@ -7,6 +7,7 @@ import NavBar from './components/navbar/navBar.component';
 import Homepage from './pages/homepage/homepage.component';
 import Platform from './pages/platform/platform.component';
 import SearchPage from './pages/searchPage/searchPage.component';
+import RandomGamePickerPage from './pages/randomGamePickerPage/randomGamePickerPage.page';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Route path='/platform/colecovision' element={<Platform platformGames={colecovision} />} />
         <Route path='/platform/atariXEXL' element={<Platform platformGames={atariXEXL} />} />
         <Route path='/search' element={<SearchPage allGames={gamesDB} />} />
+        <Route path='/random' element={<RandomGamePickerPage allGames={gamesDB} />} />
         <Route path='*' exact element={<h1> Error</h1>} />
       </Routes>
     </Router>

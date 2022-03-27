@@ -58,7 +58,7 @@ export default function Search(props) {
                          />
                          <FilterInputRadio
                               description="Game Category"
-                              options={["2D-Maze", "Puzzle Elements", "Platformer", "Sport", "Beat'Em Up", "Action","Shoot'Em Up", "Arcade", "Logical", "Racing"]}
+                              options={["2D-Maze", "Action", "Adventure", "Arcade", "Beat'Em Up", "Logical", "Platformer", "Puzzle Elements", "Racing", "Shoot'Em Up", "Sport"]}
                               searchControl={searchControl}
                               handleSearchInputs={handleSearchInputs}
                               name="category"
