@@ -17,6 +17,9 @@ export default function Game(props) {
  } else if (game.platform === "Atari XE/XL") {
   consolLink = "/platform/atariXEXL"
   consolLabel = <img className="platformImg" src="https://db3pap005files.storage.live.com/y4m5ut4dq_EshCbMSulmBtAaws5MNPCRG_iZU8VaJ39NZg4kEQopKcL6xy6b3r5oOvqQRZzgLr0sL0OtZbVx9AcNYs2JaXQzWci8HyQS9km_mFK5JOlgZXSzuAC74QAX9JA_dCrSWhfNiISSCYUJT_c5akHYK-um5h9-Tw18gi_z_xOWeZT1iRjTCh12w-I2Pqt?width=972&height=185&cropmode=none" alt="Atari XE/XL logo" />
+ } else if (game.platform === "ZX Spectrum") {
+  consolLink = "/platform/zxSpectrum"
+  consolLabel = <img className="platformImg" src="https://db3pap005files.storage.live.com/y4mB_WvQb7Bmm5Q_Z2dZrL-aKiY1WylltKjXR10uzGz7qtt2lSE9_mfloMYv1ey2WJSQ8ZGyEoir-hD9rBJnX1pcJtXT584MD42yT64t9f6T39kg6EO9xjEH_Ki5ow0UhM3omcz1eNI1eJoP_JTlQgKK5WymWfT4sO5KxXTDBG7WihKJJcITH73EqHtuxGeCtcr?width=972&height=185&cropmode=none" alt="ZX Spectrum logo" />
  }
 
 
@@ -30,11 +33,11 @@ export default function Game(props) {
      {game.multi && <button className="co-opButton">CO-OP</button>}
     </div>
     <p>Platform:
-     {isLinkNeeded ? 
-     <Link className="consolLinks" to={consolLink}>{consolLabel}</Link>:
-     <span>{consolLabel}</span>
+     {isLinkNeeded ?
+      <Link className="consolLinks" to={consolLink}>{consolLabel}</Link> :
+      <span>{consolLabel}</span>
      }
-     
+
     </p>
     <p>Category: <span> | {game.category.map(category => `${category} | `)}</span></p>
     <p>Year: <span>{game.year}</span></p>

@@ -51,7 +51,7 @@ export default function Search(props) {
 
                          <FilterInputRadio
                               description="Platform"
-                              options={["Commodore 64", "ColecoVision", "Atari XE/XL"]}
+                              options={["Commodore 64", "ColecoVision", "Atari XE/XL", "ZX Spectrum"]}
                               searchControl={searchControl}
                               handleSearchInputs={handleSearchInputs}
                               name="platform"

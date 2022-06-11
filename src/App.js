@@ -16,16 +16,16 @@ function App() {
   useEffect(() => {
     fetch("https://the-best-retro-games-backend.herokuapp.com/games")
       .then(data => data.json())
-      .then(games => {        
-        games.sort(function compere(gameA,gameB){
+      .then(games => {
+        games.sort(function compere(gameA, gameB) {
           const gameAName = gameA.name.toUpperCase()
           const gameBName = gameB.name.toUpperCase()
-          if(gameAName < gameBName){
+          if (gameAName < gameBName) {
             return -1
           }
-          if(gameAName > gameBName){
+          if (gameAName > gameBName) {
             return 1
-          } 
+          }
           return 0
         })
         setGameDB(games)
@@ -36,6 +36,7 @@ function App() {
   const commodore = gamesDB.filter(game => game.platform === "Commodore 64")
   const colecovision = gamesDB.filter(game => game.platform === "ColecoVision")
   const atariXEXL = gamesDB.filter(game => game.platform === "Atari XE/XL")
+  const zxSpectrum = gamesDB.filter(game => game.platform === "ZX Spectrum")
 
   return (
     <Router>
@@ -46,6 +47,7 @@ function App() {
         <Route path='/platform/commodore' element={<Platform platformGames={commodore} />} />
         <Route path='/platform/colecovision' element={<Platform platformGames={colecovision} />} />
         <Route path='/platform/atariXEXL' element={<Platform platformGames={atariXEXL} />} />
+        <Route path='/platform/zxSpectrum' element={<Platform platformGames={zxSpectrum} />} />
         <Route path='/search' element={<SearchPage allGames={gamesDB} />} />
         <Route path='/random' element={<RandomGamePickerPage allGames={gamesDB} />} />
         <Route path='*' exact element={<h1> Error</h1>} />
